@@ -1,7 +1,5 @@
 package kodlamaio.hrms.entities.concretes;
 
-import java.lang.annotation.Annotation;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,17 +10,17 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="job_title")
+@Table(name = "job_title")
 public class JobTitle {
-    @Id
+	@Id
 	@GeneratedValue
-	@Column(name="id")
+	@Column(name = "id")
 	private int id;
-	@Column(name="title")
+	@Column(name = "title")
 	private String title;
-	
+
 	public JobTitle() {
-		
+
 	}
 
 	public JobTitle(int id, String title) {
